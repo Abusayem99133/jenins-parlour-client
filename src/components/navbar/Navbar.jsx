@@ -51,7 +51,7 @@ const Navbar = () => {
               <img src={logo} alt="" />
             </div>
             <div className=" flex flex-col items-center">
-              <a className="btn btn-ghost text-2xl font-bold">Jerin's </a>
+              <a className="btn btn-ghost text-3xl font-bold">Jerin's </a>
               <span className="text-2xl font-semibold">Parlour</span>
             </div>
           </div>
