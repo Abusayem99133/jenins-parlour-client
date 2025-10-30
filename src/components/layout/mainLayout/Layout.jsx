@@ -4,11 +4,11 @@ import Footer from "../../footer/Footer";
 
 const Layout = () => {
   return (
-    <div>
+    <div className="bg-[#fff8f5] max-w-6xl mx-auto">
       <div>
         <Navbar />
       </div>
-      <div className="h-screen">
+      <div className="h-screen ">
         <Outlet />
       </div>
       <div>
