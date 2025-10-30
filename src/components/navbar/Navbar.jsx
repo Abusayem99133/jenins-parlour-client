@@ -4,18 +4,18 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const navItems = [
     <li className="">
-      <Link to="/" className="text-xl">
+      <Link to="/" className="text-[14px] font-semibold">
         Home
       </Link>
     </li>,
     <li>
-      <Link>Our Portfolio</Link>
+      <Link className="text-[16px] font-semibold">Our Portfolio</Link>
     </li>,
     <li>
-      <Link>Our Team</Link>
+      <Link className="text-[16px] font-semibold">Our Team</Link>
     </li>,
     <li>
-      <Link>Contact Us</Link>
+      <Link className="text-[16px] font-semibold">Contact Us</Link>
     </li>,
   ];
 
@@ -62,7 +62,9 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navItems}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <a className="btn bg-[#F63E7B] text-white text-[16px] font-normal">
+            Login
+          </a>
         </div>
       </div>
     </div>
