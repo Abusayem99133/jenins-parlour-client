@@ -3,8 +3,8 @@ import banner from "../../assets/image/banner/beautiful-young-asian-woman-touchi
 const Banner = () => {
   return (
     <div>
-      <div className="flex justify-between items-center pt-20 px-28 gap-4">
-        <div>
+      <div className="flex justify-between items-center pt-20 px-28 gap-4 w-full">
+        <div className="w-1/2">
           <h1 className="text-[48px] font-bold">
             Beauty Salon <br /> For Every Women
           </h1>
@@ -17,8 +17,8 @@ const Banner = () => {
             Get an Appointment
           </button>
         </div>
-        <div>
-          <img src={banner} t="" />
+        <div className="w-1/2 ml-16">
+          <img src={banner} alt="" />
         </div>
       </div>
     </div>

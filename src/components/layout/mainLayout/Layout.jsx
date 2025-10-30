@@ -4,8 +4,8 @@ import Footer from "../../footer/Footer";
 
 const Layout = () => {
   return (
-    <div className="bg-[#fff8f5] max-w-6xl mx-auto">
-      <div>
+    <div className="bg-[#fff8f5] ">
+      <div className="max-w-7xl mx-auto">
         <Navbar />
       </div>
       <div className="h-screen ">
