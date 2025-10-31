@@ -14,7 +14,7 @@ const Banner = () => {
             for men and women.
           </p>
           <button className="btn bg-[#F63E7B] text-white text-[16px] mt-5">
-            Get an Appointment
+            Get an Appointments
           </button>
         </div>
         <div className="w-1/2 ml-16">
