@@ -15,26 +15,24 @@ const OurServices = () => {
 
   return (
     <div>
+      {/* section heading  */}
       <h1 className="text-[34px] font-bold text-center mt-16">
         Our Awesome <span className="text-[#F63E7B] ">Services</span>{" "}
       </h1>
-      <div className="card bg-base-100 w-96 shadow-sm">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">Card Title</h2>
-          <p>
-            A card component has a figure, a body part, and inside body there
-            are title and actions parts
-          </p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+      {/* card section  */}
+      <div className="grid-cols-3">
+        {serviceData?.map((service) => (
+          <div className="card bg-base-100 w-96 shadow-sm gap-4">
+            <div key={service?.id}>
+              <img src={service?.img} alt="" />
+              <div className="card-body">
+                <h2 className="card-title">{service?.title}</h2>
+                <span>{service?.price}</span>
+                <p>{service?.desc}</p>
+              </div>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );

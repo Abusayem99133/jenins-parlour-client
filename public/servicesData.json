@@ -1,21 +1,21 @@
 [
   {
     "id": 1,
-    "img": "https://i.ibb.co/Fmhh1yF/face.png",
+    "img": "../src/assets/image/services-image/Group 1372.png",
     "title": "Anti Age Face Treatment",
     "price": "$199",
     "desc": "We craft stunning and amazing web UI using a well-drafted UX to fit your product."
   },
   {
     "id": 2,
-    "img": "https://i.ibb.co/5T9btXk/hair.png",
+    "img": "../src/assets/image/services-image/Group 1373.png",
     "title": "Hair Color & Styling",
     "price": "$89",
     "desc": "Amazing flyers, social media posts, and brand representations that would make your brand stand out."
   },
   {
     "id": 3,
-    "img": "https://i.ibb.co/3T3MzyN/skin.png",
+    "img": "../src/assets/image/services-image/Group 1374.png",
     "title": "Skin Care Treatment",
     "price": "$299",
     "desc": "With well-written codes, we build amazing apps for all platforms, mobile and web in general."
