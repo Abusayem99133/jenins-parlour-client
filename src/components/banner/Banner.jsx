@@ -5,10 +5,10 @@ const Banner = () => {
     <div>
       <div className="flex justify-between items-center pt-20 px-28 gap-4 w-full">
         <div className="w-1/2">
-          <h1 className="text-[48px] font-bold">
+          <h1 className="text-[48px] font-bold mb-2">
             Beauty Salon <br /> For Every Women
           </h1>
-          <p className="text-[16px] text-[##666666]">
+          <p className="text-[16px] text-[##666666] mb-2">
             A beauty salon or beauty parlor (beauty parlour) (or sometimes
             beauty shop) is an establishment dealing with cosmetic treatments
             for men and women.
