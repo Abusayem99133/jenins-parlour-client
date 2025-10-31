@@ -1,4 +1,18 @@
+import { useEffect, useState } from "react";
+
 const OurServices = () => {
+  const [serviceData, setServiceData] = useState([]);
+  useEffect(() => {
+    fetch("/servicesData.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setServiceData(data);
+        console.log("all data:", data);
+      })
+      .catch((err) => console.log(err.message));
+  }, []);
+  console.log("data", serviceData);
+
   return (
     <div>
       <h1 className="text-[34px] font-bold text-center mt-16">

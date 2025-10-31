@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/Fmhh1yF/face.png",
+    "title": "Anti Age Face Treatment",
+    "price": "$199",
+    "desc": "We craft stunning and amazing web UI using a well-drafted UX to fit your product."
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/5T9btXk/hair.png",
+    "title": "Hair Color & Styling",
+    "price": "$89",
+    "desc": "Amazing flyers, social media posts, and brand representations that would make your brand stand out."
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/3T3MzyN/skin.png",
+    "title": "Skin Care Treatment",
+    "price": "$299",
+    "desc": "With well-written codes, we build amazing apps for all platforms, mobile and web in general."
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/2tGKr9S/spa.png",
+    "title": "Full Body Spa",
+    "price": "$159",
+    "desc": "Experience total relaxation with our premium spa treatments and massages."
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/vY5mSzW/nails.png",
+    "title": "Nail Art & Care",
+    "price": "$49",
+    "desc": "Beautiful and creative nail art designs with professional care and hygiene."
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/BKhK6Jc/makeup.png",
+    "title": "Bridal Makeup",
+    "price": "$399",
+    "desc": "Get a stunning bridal look with our expert makeup artists for your special day."
+  },
+  {
+    "id": 7,
+    "img": "https://i.ibb.co/5M4rR7L/haircut.png",
+    "title": "Men’s Haircut",
+    "price": "$40",
+    "desc": "Trendy and professional haircut styles to suit your personality."
+  },
+  {
+    "id": 8,
+    "img": "https://i.ibb.co/Z8jrbFW/hairwash.png",
+    "title": "Hair Wash & Treatment",
+    "price": "$60",
+    "desc": "Nourish your hair with our deep wash and treatment packages."
+  },
+  {
+    "id": 9,
+    "img": "https://i.ibb.co/fqQYf1R/eyelash.png",
+    "title": "Eyelash Extension",
+    "price": "$120",
+    "desc": "Enhance your beauty with long-lasting and natural-looking eyelash extensions."
+  },
+  {
+    "id": 10,
+    "img": "https://i.ibb.co/bzwG7xH/facial.png",
+    "title": "Classic Facial",
+    "price": "$90",
+    "desc": "Revitalize your skin with our relaxing and rejuvenating facial treatments."
+  },
+  {
+    "id": 11,
+    "img": "https://i.ibb.co/jTTVBdr/massage.png",
+    "title": "Body Massage",
+    "price": "$180",
+    "desc": "Soothe your body and mind with our full-body therapeutic massages."
+  },
+  {
+    "id": 12,
+    "img": "https://i.ibb.co/99tFVdt/wax.png",
+    "title": "Waxing Service",
+    "price": "$70",
+    "desc": "Smooth, hair-free skin using professional waxing techniques."
+  },
+  {
+    "id": 13,
+    "img": "https://i.ibb.co/55xXT3b/foot.png",
+    "title": "Foot Spa",
+    "price": "$65",
+    "desc": "Relax your tired feet with our luxurious foot spa and care treatments."
+  },
+  {
+    "id": 14,
+    "img": "https://i.ibb.co/nMmtbYV/makeup2.png",
+    "title": "Party Makeup",
+    "price": "$150",
+    "desc": "Look glamorous for any occasion with our professional party makeup services."
+  },
+  {
+    "id": 15,
+    "img": "https://i.ibb.co/VY4b8JY/hairspa.png",
+    "title": "Hair Spa",
+    "price": "$110",
+    "desc": "Repair and nourish your hair with our premium hair spa treatment."
+  },
+  {
+    "id": 16,
+    "img": "https://i.ibb.co/XJDkySh/bleach.png",
+    "title": "Face Bleach",
+    "price": "$50",
+    "desc": "Brighten and even your skin tone with our safe bleaching service."
+  },
+  {
+    "id": 17,
+    "img": "https://i.ibb.co/JKfx8L3/threading.png",
+    "title": "Eyebrow Threading",
+    "price": "$25",
+    "desc": "Get perfectly shaped eyebrows with our gentle threading service."
+  },
+  {
+    "id": 18,
+    "img": "https://i.ibb.co/jyXy9Q6/haircut2.png",
+    "title": "Women’s Haircut",
+    "price": "$70",
+    "desc": "Refresh your style with a professional haircut tailored to your look."
+  },
+  {
+    "id": 19,
+    "img": "https://i.ibb.co/Y0nqCmc/pedicure.png",
+    "title": "Pedicure",
+    "price": "$80",
+    "desc": "Pamper your feet with a relaxing pedicure for smooth and soft skin."
+  },
+  {
+    "id": 20,
+    "img": "https://i.ibb.co/qFVVzKX/manicure.png",
+    "title": "Manicure",
+    "price": "$75",
+    "desc": "Give your hands the care they deserve with our gentle manicure service."
+  }
+]
