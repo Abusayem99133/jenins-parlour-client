@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button } from "../../hooks/CustomButton";
+import { Button } from "../customHooks/CustomButton";
 
 const OurServices = () => {
   const [serviceData, setServiceData] = useState([]);
@@ -15,9 +15,9 @@ const OurServices = () => {
   console.log("data", serviceData);
 
   return (
-    <div className="bg-[#ffffff] shadow-[#000000]/10  mt-16 pt-10">
+    <div className="bg-[#ffffff] shadow-[#000000]/10 ">
       {/* section heading  */}
-      <h1 className="text-[34px] font-bold text-center">
+      <h1 className="text-[34px] font-bold text-center mt-16">
         Our Awesome <span className="text-[#F63E7B] ">Services</span>{" "}
       </h1>
       {/* card section  */}

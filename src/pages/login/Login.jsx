@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../assets/image/logo/logo.png";
+import logo from "../../assets/image/logo/logo.png";
 import { FcGoogle } from "react-icons/fc";
 import { Helmet } from "react-helmet-async";
 const Login = () => {
