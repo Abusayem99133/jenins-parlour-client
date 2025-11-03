@@ -1,5 +1,6 @@
 import React from "react";
 import banner from "../../assets/image/banner/beautiful-young-asian-woman-touching-her-clean-face-with-fresh-healthy-skin-isolated-white-wall-beauty-cosmetics-facial-treatment-concept 1.png";
+import { Button } from "../customHooks/CustomButton";
 const Banner = () => {
   return (
     <div>
@@ -13,9 +14,10 @@ const Banner = () => {
             beauty shop) is an establishment dealing with cosmetic treatments
             for men and women.
           </p>
-          <button className="btn bg-[#F63E7B] text-white text-[16px] mt-5">
+          {/* <button className="btn bg-[#F63E7B] text-white text-[16px] mt-5">
             Get an Appointments
-          </button>
+          </button> */}
+          <Button text={"Get an Appointments"} />
         </div>
         <div className="w-1/2 ml-16">
           <img src={banner} alt="" />

@@ -14,25 +14,35 @@ const OurServices = () => {
   console.log("data", serviceData);
 
   return (
-    <div>
+    <div className="bg-[#ffffff] shadow-[#000000]/10">
       {/* section heading  */}
       <h1 className="text-[34px] font-bold text-center mt-16">
         Our Awesome <span className="text-[#F63E7B] ">Services</span>{" "}
       </h1>
       {/* card section  */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 shadow-sm gap-4">
-        {serviceData?.map((service) => (
-          <div className="card bg-base-100 w-96 shadow-sm gap-4">
-            <div key={service?.id}>
-              <img src={service?.img} alt="" />
-              <div className="card-body">
-                <h2 className="card-title">{service?.title}</h2>
-                <span>{service?.price}</span>
-                <p>{service?.desc}</p>
-              </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12">
+        {serviceData?.slice(0, 3)?.map((service) => (
+          <div
+            key={service?.id}
+            className="card bg-base-100 w-full max-w-sm mx-auto shadow "
+          >
+            <figure className="">
+              <img
+                src={service?.img}
+                alt="logo"
+                className="rounded-xl  h-auto object-cover"
+              />
+            </figure>
+            <div className="card-body items-center text-center">
+              <h2 className="card-title">{service?.title}</h2>
+              <span className="font-semibold">{service?.price}</span>
+              <p>{service?.desc}</p>
             </div>
           </div>
         ))}
+      </div>
+      <div>
+        <h1 className="btn">Explore more</h1>
       </div>
     </div>
   );
