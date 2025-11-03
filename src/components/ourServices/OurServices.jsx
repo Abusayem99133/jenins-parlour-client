@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Button } from "../customHooks/CustomButton";
 
 const OurServices = () => {
   const [serviceData, setServiceData] = useState([]);
@@ -14,7 +15,7 @@ const OurServices = () => {
   console.log("data", serviceData);
 
   return (
-    <div className="bg-[#ffffff] shadow-[#000000]/10">
+    <div className="bg-[#ffffff] shadow-[#000000]/10 ">
       {/* section heading  */}
       <h1 className="text-[34px] font-bold text-center mt-16">
         Our Awesome <span className="text-[#F63E7B] ">Services</span>{" "}
@@ -34,15 +35,17 @@ const OurServices = () => {
               />
             </figure>
             <div className="card-body items-center text-center">
-              <h2 className="card-title">{service?.title}</h2>
-              <span className="font-semibold">{service?.price}</span>
-              <p>{service?.desc}</p>
+              <h2 className=" text-[20px] font-medium">{service?.title}</h2>
+              <span className="font-medium text-[20px]">{service?.price}</span>
+              <p className="font-medium text-[16px] text-[#000000]/70">
+                {service?.desc}
+              </p>
             </div>
           </div>
         ))}
       </div>
-      <div>
-        <h1 className="btn">Explore more</h1>
+      <div className="text-center py-12">
+        <Button text={"Explore more"} />
       </div>
     </div>
   );
