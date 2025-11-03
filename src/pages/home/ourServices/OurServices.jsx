@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button } from "../../hooks/CustomButton";
+import { Button } from "../../../hooks/CustomButton";
 
 const OurServices = () => {
   const [serviceData, setServiceData] = useState([]);

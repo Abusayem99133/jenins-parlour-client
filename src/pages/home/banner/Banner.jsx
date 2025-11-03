@@ -1,6 +1,6 @@
 import React from "react";
-import banner from "../../assets/image/banner/beautiful-young-asian-woman-touching-her-clean-face-with-fresh-healthy-skin-isolated-white-wall-beauty-cosmetics-facial-treatment-concept 1.png";
-import { Button } from "../../hooks/CustomButton";
+import banner from "../../../assets/image/banner/beautiful-young-asian-woman-touching-her-clean-face-with-fresh-healthy-skin-isolated-white-wall-beauty-cosmetics-facial-treatment-concept 1.png";
+import { Button } from "../../../hooks/CustomButton";
 const Banner = () => {
   return (
     <div>
