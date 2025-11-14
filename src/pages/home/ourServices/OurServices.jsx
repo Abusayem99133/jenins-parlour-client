@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button } from "../../../hooks/CustomButton";
+import FacialWash from "./facialWash";
 
 const OurServices = () => {
   const [serviceData, setServiceData] = useState([]);
@@ -46,6 +47,9 @@ const OurServices = () => {
       </div>
       <div className="text-center py-12">
         <Button text={"Explore more"} />
+      </div>
+      <div>
+        <FacialWash />
       </div>
     </div>
   );
