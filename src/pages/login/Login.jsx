@@ -23,7 +23,7 @@ const Login = () => {
           <button className=" ">
             <FcGoogle className="text-4xl md:max-w-96" />
           </button>
-          work on going
+          work on goin
         </span>
       </div>
     </div>
