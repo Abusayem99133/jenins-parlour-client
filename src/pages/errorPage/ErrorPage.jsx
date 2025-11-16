@@ -4,7 +4,7 @@ const ErrorPage = () => {
   return (
     <div>
       <h1 className="text-red-800">error page</h1>
-      <h1>work on going</h1>
+      <h1>work on go</h1>
     </div>
   );
 };
