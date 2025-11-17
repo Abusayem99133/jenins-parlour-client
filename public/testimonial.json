@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/Fmhh1yF/face.png",
+    "title": "Premium Facial Treatment",
+    "subtitle": "Glow & Refresh Skin",
+    "description": "Experience a premium facial treatment that deeply cleanses, hydrates, and rejuvenates your skin.",
+    "review": 4.8
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/5T9btXk/hair.png",
+    "title": "Hair Color & Styling",
+    "subtitle": "Modern Stylish Look",
+    "description": "Get a fashionable hair color and styling from expert professionals to level up your appearance.",
+    "review": 4.6
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/6RR0Rz0/nail.png",
+    "title": "Nail Art & Manicure",
+    "subtitle": "Beauty at Your Fingertips",
+    "description": "Trendy nail art, manicure, and pampering session for soft and perfectly shaped nails.",
+    "review": 4.7
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/2tg7tDx/massage.png",
+    "title": "Relaxing Body Massage",
+    "subtitle": "Stress Relief Therapy",
+    "description": "A relaxing full-body massage therapy to release tension and improve your body circulation.",
+    "review": 4.9
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/2q2m8DN/makeup.png",
+    "title": "Bridal Makeup",
+    "subtitle": "Elegant Wedding Look",
+    "description": "Professional bridal makeup that enhances natural beauty and ensures you shine on your big day.",
+    "review": 5.0
+  }
+]
