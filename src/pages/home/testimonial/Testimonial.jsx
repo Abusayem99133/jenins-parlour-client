@@ -42,8 +42,23 @@ const Testimonial = () => {
         <div></div>
       </div>
       <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
+        {testimonial?.map((reviews) => (
+          <SwiperSlide>
+            <div key={reviews?.id}>
+              <div>
+                <div>
+                  <img src={reviews?.img} alt="" />
+                </div>
+                <div>
+                  <h2>{reviews?.title}</h2>
+                  <h4>{reviews?.subtitle}</h4>
+                </div>
+                <p>{reviews?.description}</p>
+                <span>{reviews?.review}</span>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
