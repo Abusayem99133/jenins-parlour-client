@@ -18,8 +18,10 @@ const Testimonial = () => {
   console.log(testimonial);
   return (
     <div>
-      <h1>Testimonial work on going </h1>
-      <div>
+      <h1 className="text-[34px] items-center justify-center mx-auto flex font-bold text-[#1F1632] my-12">
+        Testimonials
+      </h1>
+      {/* <div>
         <div>
           <div>
             <div>
@@ -40,26 +42,46 @@ const Testimonial = () => {
         </div>
         <div></div>
         <div></div>
-      </div>
-      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
-        {testimonial?.map((reviews) => (
-          <SwiperSlide>
-            <div key={reviews?.id}>
-              <div>
-                <div>
-                  <img src={reviews?.img} alt="" />
+      </div> */}
+      <div className="p-4">
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          {testimonial?.map((reviews) => (
+            <SwiperSlide>
+              <div key={reviews?.id} className="border p-8 cursor-pointer h-52">
+                <div className="flex ">
+                  <div>
+                    <img
+                      className="w-[64px] h-[64px] rounded-full mr-5"
+                      src={reviews?.thumbnail}
+                      alt={reviews?.name}
+                    />
+                  </div>
+                  <div>
+                    <h2 className="text-[20px] font-semibold text-[#000000]">
+                      {reviews?.name}
+                    </h2>
+                    <h4 className="text-[16px] font-medium text-[#000000]">
+                      {reviews?.subtitle}
+                    </h4>
+                  </div>
                 </div>
-                <div>
-                  <h2>{reviews?.title}</h2>
-                  <h4>{reviews?.subtitle}</h4>
-                </div>
-                <p>{reviews?.description}</p>
+                <p className="text-[16px] font-normal text-[#707070] my-4">
+                  {reviews?.description}
+                </p>
                 <span>{reviews?.review}</span>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };

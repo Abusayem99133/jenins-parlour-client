@@ -1,42 +1,42 @@
 [
   {
     "id": 1,
-    "img": "https://i.ibb.co/Fmhh1yF/face.png",
-    "title": "Premium Facial Treatment",
-    "subtitle": "Glow & Refresh Skin",
-    "description": "Experience a premium facial treatment that deeply cleanses, hydrates, and rejuvenates your skin.",
+    "thumbnail": "https://i.postimg.cc/bNCC2Lwz/nash-patrik.png",
+    "name": "Nash Patrik",
+    "subtitle": "CEO, Manpol",
+    "description": "Responsible for overall company vision, leadership, and strategic decision-making.",
     "review": 4.8
   },
   {
     "id": 2,
-    "img": "https://i.ibb.co/5T9btXk/hair.png",
-    "title": "Hair Color & Styling",
-    "subtitle": "Modern Stylish Look",
-    "description": "Get a fashionable hair color and styling from expert professionals to level up your appearance.",
+    "thumbnail": "https://i.postimg.cc/0QVmHW3b/miriam-barron.png",
+    "name": "Miriam Barron",
+    "subtitle": "COO, swiden",
+    "description": "Oversees day-to-day operations and ensures business processes run smoothly.",
     "review": 4.6
   },
   {
     "id": 3,
-    "img": "https://i.ibb.co/6RR0Rz0/nail.png",
-    "title": "Nail Art & Manicure",
-    "subtitle": "Beauty at Your Fingertips",
-    "description": "Trendy nail art, manicure, and pampering session for soft and perfectly shaped nails.",
+    "thumbnail": "https://i.postimg.cc/3wBDdf3L/bria-malone.png",
+    "name": "Bria Malone",
+    "subtitle": "CFO,US ",
+    "description": "Manages company finances, budgeting, and financial planning.",
     "review": 4.7
   },
   {
     "id": 4,
-    "img": "https://i.ibb.co/2tg7tDx/massage.png",
-    "title": "Relaxing Body Massage",
-    "subtitle": "Stress Relief Therapy",
-    "description": "A relaxing full-body massage therapy to release tension and improve your body circulation.",
+    "thumbnail": "https://i.ibb.co/2tg7tDx/massage.png",
+    "name": "Zayan Rahman",
+    "subtitle": "HRD, Dubai",
+    "description": "Responsible for recruitment, employee management, and HR strategy.",
     "review": 4.9
   },
   {
     "id": 5,
-    "img": "https://i.ibb.co/2q2m8DN/makeup.png",
-    "title": "Bridal Makeup",
-    "subtitle": "Elegant Wedding Look",
-    "description": "Professional bridal makeup that enhances natural beauty and ensures you shine on your big day.",
+    "thumbnail": "https://i.ibb.co/2q2m8DN/makeup.png",
+    "name": "Elina Patrick",
+    "subtitle": "MM,Canada",
+    "description": "Creates marketing strategies, manages brand campaigns, and drives business growth.",
     "review": 5.0
   }
 ]
