@@ -55,7 +55,7 @@ const Testimonial = () => {
         >
           {testimonial?.map((reviews) => (
             <SwiperSlide>
-              <div key={reviews?.id} className="border p-8 cursor-pointer h-52">
+              <div key={reviews?.id} className=" p-8 cursor-pointer h-52">
                 <div className="flex ">
                   <div>
                     <img
