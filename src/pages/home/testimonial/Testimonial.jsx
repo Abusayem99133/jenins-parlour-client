@@ -1,5 +1,6 @@
 // Import Swiper styles
 import { useEffect, useState } from "react";
+import Rating from "react-rating";
 import "swiper/css";
 import { Pagination } from "swiper/modules";
 // Import Swiper React components
@@ -7,6 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const Testimonial = () => {
   const [testimonial, setTestimonial] = useState([]);
+  const [rating, setRating] = useState(0);
   useEffect(() => {
     fetch("./testimonial.json")
       .then((res) => res.json())
@@ -77,6 +79,14 @@ const Testimonial = () => {
                   {reviews?.description}
                 </p>
                 <span>{reviews?.review}</span>
+                <span>
+                  <Rating
+                    style={{ maxWidth: 180 }}
+                    value={rating}
+                    onChange={setRating}
+                    isDisabled
+                  />
+                </span>
               </div>
             </SwiperSlide>
           ))}
