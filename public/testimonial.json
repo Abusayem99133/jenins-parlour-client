@@ -5,7 +5,7 @@
     "name": "Nash Patrik",
     "subtitle": "CEO, Manpol",
     "description": "Responsible for overall company vision, leadership, and strategic decision-making.",
-    "review": 4.8
+    "review": 3.2
   },
   {
     "id": 2,
@@ -36,7 +36,7 @@
     "thumbnail": "https://i.postimg.cc/Wzq249wQ/images.jpg",
     "name": "Elina Patrick",
     "subtitle": "MM,Canada",
-    "description": "Creates marketing strategies, manages brand campaigns, and drives business growth.",
-    "review":5.3
+    "description": "Creates marketing strategies, manages brand campaigns.",
+    "review":3.5
   }
 ]
