@@ -3,9 +3,10 @@ import { useEffect, useState } from "react";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 import "swiper/css";
-import { Pagination } from "swiper/modules";
+import "swiper/css/pagination";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 
 const Testimonial = () => {
   const [testimonial, setTestimonial] = useState([]);
@@ -18,9 +19,9 @@ const Testimonial = () => {
         console.log("Loaded data", data);
       });
   }, []);
-  console.log(testimonial);
+  // console.log(testimonial);
   return (
-    <div>
+    <div className="bg-white">
       <h1 className="text-[34px] items-center justify-center mx-auto flex font-bold text-[#1F1632] my-12">
         Testimonials
       </h1>
