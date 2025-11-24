@@ -9,7 +9,7 @@ import img4 from "../../assets/image/footer/youtube.png";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer sm:footer-horizontal bg-[#F63E7B] text-white p-10">
+      <footer className="footer sm:footer-horizontal bg-[#F63E7B] text-white p-16 ">
         <aside className="flex">
           <span>
             <CiLocationOn className="text-3xl" />
@@ -21,25 +21,25 @@ const Footer = () => {
           </p>
         </aside>
         <nav>
-          <h6 className="text-[20px] font-semibold">Company </h6>
-          <a className="link link-hover">About</a>
-          <a className="link link-hover">Project</a>
-          <a className="link link-hover">Our Team</a>
-          <a className="link link-hover">Terms Conditions</a>
-          <a className="link link-hover">Submit Listing</a>
+          <h6 className="text-[20px] font-semibold mb-2">Company </h6>
+          <a className="link link-hover text-[16px]">About</a>
+          <a className="link link-hover text-[16px]">Project</a>
+          <a className="link link-hover text-[16px]">Our Team</a>
+          <a className="link link-hover text-[16px]">Terms Conditions</a>
+          <a className="link link-hover text-[16px]">Submit Listing</a>
         </nav>
         <nav>
-          <h6 className="text-[20px] font-semibold">Quick Links</h6>
+          <h6 className="text-[20px] font-semibold mb-2">Quick Links</h6>
           <a className="link link-hover">Quick Links</a>
-          <a className="link link-hover">Rentals</a>
-          <a className="link link-hover">Sales</a>
-          <a className="link link-hover">Our blog</a>
+          <a className="link link-hover text-[16px]">Rentals</a>
+          <a className="link link-hover text-[16px]">Sales</a>
+          <a className="link link-hover text-[16px]">Our blog</a>
         </nav>
         <nav>
-          <h6 className="text-[20px] font-semibold">About us</h6>
-          <a className="link link-hover">
+          <h6 className="text-[20px] font-semibold ">About us</h6>
+          <a className="link link-hover text-[16px] text-[#D8D8D8] my-2">
             Catch up on Jerin’s journey as we continue to <br /> redefine beauty
-            and wellness for women in Bangladesh.
+            and wellness for women <br /> in Bangladesh.
           </a>
           <span className="flex space-x-6">
             <a
