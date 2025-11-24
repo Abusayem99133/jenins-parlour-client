@@ -58,19 +58,19 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="flex space-x-6 items-center">
             <a href="https://www.facebook.com/" target="_blank">
-              <img src={img1} alt="Facebook" className="w-6 h-6" />
+              <img src={img1} alt="Facebook" />
             </a>
 
             <a href="https://www.instagram.com/" target="_blank">
-              <img src={img2} alt="Instagram" className="w-6 h-6" />
+              <img src={img2} alt="Instagram" />
             </a>
 
             <a href="https://www.linkedin.com/" target="_blank">
-              <img src={img3} alt="LinkedIn" className="w-6 h-6" />
+              <img src={img3} alt="LinkedIn" />
             </a>
 
             <a href="https://www.youtube.com/" target="_blank">
-              <img src={img4} alt="YouTube" className="w-6 h-6" />
+              <img src={img4} alt="YouTube" />
             </a>
           </div>
         </nav>
