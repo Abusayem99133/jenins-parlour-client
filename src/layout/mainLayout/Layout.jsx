@@ -4,15 +4,18 @@ import Footer from "../../shared/footer/Footer";
 
 const Layout = () => {
   const location = useLocation();
-  const hideLayout = ["/login"];
-  const isHidden = hideLayout?.includes(location?.pathname);
+  const path = location?.pathname;
+  const hideBoth = ["/login"];
+  const hideFooterOnly = ["/signup"];
+  const hideNavbar = hideBoth?.includes(path);
+  const hideFooter = hideBoth?.includes(path) || hideFooterOnly?.includes(path);
   return (
     <div className="bg-[#fff8f5] ">
-      <div className="max-w-7xl mx-auto">{!isHidden && <Navbar />}</div>
+      <div className="max-w-7xl mx-auto">{!hideNavbar && <Navbar />}</div>
       <div>
         <Outlet />
       </div>
-      <div>{!isHidden && <Footer />} </div>
+      <div>{!hideFooter && <Footer />} </div>
     </div>
   );
 };

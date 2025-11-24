@@ -29,7 +29,7 @@ const Login = () => {
         <p className="my-4">
           Don't have an account?{" "}
           <span className="text-[#F63E7B]">
-            <Link to={"/"}>Create an account</Link>
+            <Link to={"/signup"}>Create an account</Link>
           </span>
         </p>
       </div>
