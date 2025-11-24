@@ -16,7 +16,7 @@ const FacialWash = () => {
             beauty shop) is an establishment dealing with cosmetic treatments
             for men and women.
           </p>
-          <div className="flex mt-10">
+          <div className="flex mt-2 md:mt-4">
             <div>
               <h2 className="font-bold text-[#F63E7B] text-[30px] md:text-[42px]">
                 500+

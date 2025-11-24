@@ -22,7 +22,7 @@ const Testimonial = () => {
   // console.log(testimonial);
   return (
     <div className="bg-white">
-      <h1 className="text-[34px] items-center justify-center mx-auto flex font-bold text-[#1F1632] my-12">
+      <h1 className="text-[34px] items-center justify-center mx-auto flex font-bold text-[#1F1632] mt-12">
         Testimonials
       </h1>
       {/* <div>
@@ -49,13 +49,24 @@ const Testimonial = () => {
       </div> */}
       <div className="p-4">
         <Swiper
-          slidesPerView={3}
+          slidesPerView={1}
           spaceBetween={30}
           pagination={{
             clickable: true,
           }}
           modules={[Pagination]}
           className="mySwiper"
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
         >
           {testimonial?.map((reviews) => (
             <SwiperSlide>
