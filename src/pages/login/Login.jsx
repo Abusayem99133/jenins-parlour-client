@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 const Login = () => {
   return (
-    <div className="flex flex-col justify-center items-center mx-auto mt-36">
+    <div className="flex flex-col justify-center items-center mx-auto  bg-white border h-screen">
       <Helmet>
         <title>Jerins-parlour | Login Page</title>
       </Helmet>
@@ -18,7 +18,7 @@ const Login = () => {
           <span className="text-2xl font-semibold">Parlour</span>
         </div>
       </div>
-      <div className="mt-28 text-center">
+      <div className="mt-20 text-center">
         <h1 className="text-[36px] font-semibold   mb-5">Login With</h1>
         <span className="w-[350px] border-2 border-slate-300 input rounded-full py-6 ">
           <button className="flex items-center justify-between gap-18 text-[16px] font-semibold  cursor-pointer">
