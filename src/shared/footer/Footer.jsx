@@ -9,7 +9,7 @@ import img4 from "../../assets/image/footer/youtube.png";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer sm:footer-horizontal bg-[#F63E7B] text-white p-16 ">
+      <footer className="footer sm:footer-horizontal bg-[#F63E7B] text-white p-8 md:p-24 space-x-10 ">
         <aside className="flex">
           <span>
             <CiLocationOn className="text-3xl" />
@@ -39,7 +39,8 @@ const Footer = () => {
           <h6 className="text-[20px] font-semibold ">About us</h6>
           <a className="link link-hover text-[16px] text-[#D8D8D8] my-2">
             Catch up on Jerin’s journey as we continue to <br /> redefine beauty
-            and wellness for women <br /> in Bangladesh.
+            and wellness for women <br />
+            in Bangladesh.
           </a>
           <span className="flex space-x-6">
             <a
