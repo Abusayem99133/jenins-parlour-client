@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../assets/image/logo/logo.png";
 import { FcGoogle } from "react-icons/fc";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <div className="flex flex-col justify-center items-center mx-auto mt-36">
@@ -17,14 +18,20 @@ const Login = () => {
           <span className="text-2xl font-semibold">Parlour</span>
         </div>
       </div>
-      <div className="mt-28">
-        <h1 className="text-[36px] font-semibold ">Login With</h1>
-        <span className="border-2 border-slate-300 input rounded-full py-6 ">
-          <button className=" ">
-            <FcGoogle className="text-4xl md:max-w-96" />
+      <div className="mt-28 text-center">
+        <h1 className="text-[36px] font-semibold   mb-5">Login With</h1>
+        <span className="w-[350px] border-2 border-slate-300 input rounded-full py-6 ">
+          <button className="flex items-center justify-between gap-18 text-[16px] font-semibold  cursor-pointer">
+            <FcGoogle className="text-4xl" />
+            Continue with Google
           </button>
-          work on goin
         </span>
+        <p className="my-4">
+          Don't have an account?{" "}
+          <span className="text-[#F63E7B]">
+            <Link to={"/"}>Create an account</Link>
+          </span>
+        </p>
       </div>
     </div>
   );
