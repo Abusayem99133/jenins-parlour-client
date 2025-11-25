@@ -6,7 +6,7 @@ import { FcGoogle } from "react-icons/fc";
 const Register = () => {
   return (
     <div className="flex flex-col justify-center items-center bg-[white]  h-auto min-h-screen px-4 ">
-      <form className="border w-full max-w-[570px] p-6 sm:p-8 md:p-10 lg:p-12 rounded-md">
+      <form className="border w-full max-w-[570px] p-4 sm:p-6 md:p-8 lg:p-10 rounded-md">
         <h1 className="text-[22px] sm:text-[24px] font-bold mb-10">
           Create an account
         </h1>
