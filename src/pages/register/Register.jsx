@@ -65,13 +65,13 @@ const Register = () => {
         <img className="h-[2px] w-[220px]" src={lineBar} alt="" />
       </div>
       <div className="">
-        <button className="flex items-center w-[370px] border rounded-full gap-12 px-2 py-2 mt-4 cursor-pointer  font-medium text-[16px]">
+        <button className="flex items-center w-[470px] border rounded-full gap-12 px-2 py-2 mt-4 cursor-pointer  font-medium text-[16px]">
           <img src={facebook} alt="" />
           <span>Continue with Facebook</span>
         </button>
       </div>
       <div className="mt-4">
-        <button className="flex items-center border  rounded-full w-[370px] py-2 px-2 gap-12 font-medium text-[16px]">
+        <button className="flex items-center border  rounded-full w-[470px] py-2 px-2 gap-12 font-medium text-[16px]">
           <FcGoogle className="text-4xl" />
           <span>Continue with Google</span>
         </button>
