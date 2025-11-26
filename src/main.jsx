@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { RouterProvider } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import { router } from "./layout/routes/Router";
+import { router } from "./component/layout/routes/Router";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <div className="max-h-screen max-w-[1480px] mx-auto ">
