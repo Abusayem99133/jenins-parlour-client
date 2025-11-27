@@ -1,7 +1,9 @@
 import React from "react";
 import logo from "../../assets/image/logo/logo.png";
 import { Link } from "react-router-dom";
+import { UserAuth } from "../../component/context/AuthContext";
 const Navbar = () => {
+  const { signOut } = UserAuth();
   const navItems = [
     <li className="">
       <Link to="/" className="text-[16px] font-semibold">

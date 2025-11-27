@@ -4,6 +4,7 @@ import lineBar from "../../assets/image/register/Line -bar.png";
 import facebook from "../../assets/image/register/facebook.png";
 import { FcGoogle } from "react-icons/fc";
 import { useForm } from "react-hook-form";
+import { UserAuth } from "../../component/context/AuthContext";
 const Register = () => {
   const {
     register,
@@ -12,6 +13,8 @@ const Register = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => console.log(data);
+  const { session, signUpNewUser } = UserAuth();
+  console.log(session);
   return (
     <div className="flex flex-col justify-center items-center bg-[white]  h-auto min-h-screen px-4 ">
       <form
