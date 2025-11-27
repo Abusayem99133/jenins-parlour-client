@@ -3,44 +3,84 @@ import { Link } from "react-router-dom";
 import lineBar from "../../assets/image/register/Line -bar.png";
 import facebook from "../../assets/image/register/facebook.png";
 import { FcGoogle } from "react-icons/fc";
+import { useForm } from "react-hook-form";
 const Register = () => {
+  const {
+    register,
+    handleSubmit,
+
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
   return (
     <div className="flex flex-col justify-center items-center bg-[white]  h-auto min-h-screen px-4 ">
-      <form className="border w-full max-w-[570px] p-4 sm:p-6 md:p-8 lg:p-10 rounded-md">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="border w-full max-w-[570px] p-4 sm:p-6 md:p-8 lg:p-10 rounded-md"
+      >
         <h1 className="text-[22px] sm:text-[24px] font-bold mb-10">
           Create an account
         </h1>
 
         <fieldset className="fieldset flex flex-col gap-8">
           <input
-            className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium"
+            {...register("first_name", { required: true })}
+            className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
             type="text"
+            name="first_name"
             placeholder="First Name"
           />
 
+          {errors?.first_name && (
+            <span className="text-red-600">Name field is required</span>
+          )}
           <input
-            className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium"
+            {...register("last_name", { required: true })}
+            className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
             type="text"
+            name="last_name"
             placeholder="Last Name"
           />
+          {errors?.last_name && (
+            <span className="text-red-600">Last Name field is required</span>
+          )}
 
           <input
-            className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium"
+            {...register("email", { required: true })}
+            className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
             type="text"
+            name="email"
             placeholder="User Name or Email"
           />
+          {errors?.email && (
+            <span className="text-red-600">
+              User Name or Email field is required
+            </span>
+          )}
 
           <input
-            className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium"
+            {...register("password", { required: true })}
+            className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
             type="password"
+            name="password"
             placeholder="Password"
           />
+          {errors?.password && (
+            <span className="text-red-600">Password field is required</span>
+          )}
 
           <input
-            className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium"
+            {...register("confirm_password", { required: true })}
+            className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
             type="password"
+            name="confirm_password"
             placeholder="Confirm Password"
           />
+          {errors?.confirm_password && (
+            <span className="text-red-600">
+              Confirm Password field is required
+            </span>
+          )}
         </fieldset>
 
         <div className="w-full mt-8">
