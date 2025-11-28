@@ -6,7 +6,7 @@ const Navbar = () => {
   const { signOut } = UserAuth();
   const navItems = [
     <li className="">
-      <Link to="/" className="text-[16px] font-semibold">
+      <Link to="/" className="text-[17px] font-semibold">
         Home
       </Link>
     </li>,
