@@ -28,7 +28,7 @@ const Register = () => {
         <fieldset className="fieldset flex flex-col gap-8">
           <input
             {...register("first_name", { required: true })}
-            className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
+            className="border-b-4 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
             type="text"
             name="first_name"
             placeholder="First Name"
