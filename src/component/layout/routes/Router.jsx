@@ -4,8 +4,9 @@ import Layout from "../mainLayout/Layout";
 import Home from "../../../pages/home/Home";
 import Login from "../../../pages/login/Login";
 import Register from "../../../pages/register/Register";
-import UserDashboard from "../../../pages/dashboard/user-dashboard/UserDashboard";
-import BookingList from "../../../pages/dashboard/user-dashboard/booking-list/BookingList";
+import BookingList from "../../../pages/dashboard/user-dashboard/user-pages/booking-list/BookingList";
+import UserDashboardLayout from "../../../pages/dashboard/user-dashboard/UserDashboardLayout";
+import UserDashboardHome from "../../../pages/dashboard/user-dashboard/user-pages/user-home/UserDashboardHome";
 
 export const router = createBrowserRouter([
   {
@@ -29,9 +30,13 @@ export const router = createBrowserRouter([
   },
   {
     path: "user-dashboard",
-    element: <UserDashboard />,
+    element: <UserDashboardLayout />,
     errorElement: <ErrorPage />,
     children: [
+      {
+        path: "",
+        element: <UserDashboardHome />,
+      },
       {
         path: "book",
         element: <BookingList />,
