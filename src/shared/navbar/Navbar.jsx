@@ -14,6 +14,14 @@ const Navbar = () => {
       <Link className="text-[16px] font-semibold">Our Portfolio</Link>
     </li>,
     <li>
+      <Link to={"/user-dashboard"} className="text-[16px] font-semibold">
+        User Dashboard
+      </Link>
+    </li>,
+    <li>
+      <Link className="text-[16px] font-semibold">Admin Dashboard</Link>
+    </li>,
+    <li>
       <Link className="text-[16px] font-semibold">Our Team</Link>
     </li>,
     <li>
