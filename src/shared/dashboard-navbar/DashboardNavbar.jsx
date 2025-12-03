@@ -14,7 +14,7 @@ const DashboardNavbar = () => {
 
   return (
     <div>
-      <div className="flex pt-4">
+      <div className="flex p-1">
         <div className="navbar-start">
           <div className="dropdown">
             <ul
@@ -41,13 +41,29 @@ const DashboardNavbar = () => {
             <span>book</span>
           </ul>
         </div>
-        <div className="navbar-end">
-          <Link
-            to={""}
-            className="btn bg-[#F63E7B] text-white text-[16px] font-normal"
+        <div className="dropdown dropdown-end">
+          <div tabIndex={0} role="button" className="cursor-pointer">
+            <div className="">
+              <h4>Abu Sayem</h4>
+            </div>
+          </div>
+          <ul
+            tabIndex="-1"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            User name
-          </Link>
+            <li>
+              <a className="justify-between">
+                Profile
+                <span className="badge">New</span>
+              </a>
+            </li>
+            <li>
+              <a>Settings</a>
+            </li>
+            <li>
+              <a>Logout</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

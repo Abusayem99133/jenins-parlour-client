@@ -1,69 +1,72 @@
 import React from "react";
 import { CgShoppingCart } from "react-icons/cg";
-import { CiCircleList } from "react-icons/ci";
+import { CiCircleList, CiSettings } from "react-icons/ci";
 import { IoIosList } from "react-icons/io";
 import { RiMessage2Line } from "react-icons/ri";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const UserSidebar = () => {
   const navItems = [
     <li>
-      <Link
+      <NavLink
         to={"book"}
-        className="is-drawer-close:tooltip is-drawer-close:tooltip-right text-[16px]"
         data-tip="Book"
+        className={({ isActive }) =>
+          `is-drawer-close:tooltip is-drawer-close:tooltip-right text-[16px] ${
+            isActive ? "bg-amber-200 font-semibold" : "bg-slate-100"
+          }`
+        }
       >
         {/* book icon */}
         <CgShoppingCart />
         <span className="is-drawer-close:hidden">Book</span>
-      </Link>
+      </NavLink>
     </li>,
     <li>
-      <Link
+      <NavLink
         to={"booking-list"}
-        className="is-drawer-close:tooltip is-drawer-close:tooltip-right text-[16px]"
+        className={({ isActive }) =>
+          `is-drawer-close:tooltip is-drawer-close:tooltip-right text-[16px] ${
+            isActive ? "bg-amber-200 font-semibold" : "bg-slate-100"
+          }`
+        }
         data-tip="Booking List"
       >
         {/* list icon */}
         <IoIosList />
-        <span className="is-drawer-close:hidden">Booking List</span>
-      </Link>
+        <span className="is-drawer-close:hidden ">Booking List</span>
+      </NavLink>
     </li>,
     <li>
-      <Link
+      <NavLink
         to={"review"}
-        className="is-drawer-close:tooltip is-drawer-close:tooltip-right text-[16px]"
+        className={({ isActive }) =>
+          `is-drawer-close:tooltip is-drawer-close:tooltip-right text-[16px] ${
+            isActive ? "bg-amber-200 font-semibold" : "bg-slate-100"
+          }`
+        }
         data-tip="Review"
       >
         {/* review icon */}
         <RiMessage2Line />
         <span className="is-drawer-close:hidden">Review</span>
-      </Link>
+      </NavLink>
     </li>,
 
     <li>
-      <button
-        className="is-drawer-close:tooltip is-drawer-close:tooltip-right text-[16px]"
+      <NavLink
+        to={"settings"}
+        className={({ isActive }) =>
+          `is-drawer-close:tooltip is-drawer-close:tooltip-right text-[16px] ${
+            isActive ? "bg-amber-200 font-semibold" : "bg-slate-100"
+          }`
+        }
         data-tip="Settings"
       >
         {/* Settings icon */}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          strokeLinejoin="round"
-          strokeLinecap="round"
-          strokeWidth="2"
-          fill="none"
-          stroke="currentColor"
-          className="my-1.5 inline-block size-4"
-        >
-          <path d="M20 7h-9"></path>
-          <path d="M14 17H5"></path>
-          <circle cx="17" cy="17" r="3"></circle>
-          <circle cx="7" cy="7" r="3"></circle>
-        </svg>
+        <CiSettings />
         <span className="is-drawer-close:hidden text-[16px]">Settings</span>
-      </button>
+      </NavLink>
     </li>,
   ];
   return (
