@@ -36,7 +36,7 @@ const UserDashboardLayout = () => {
             {/* <div className="px-4">Navbar Title</div> */}
           </nav>
           {/* Page content here */}
-          <div className="p-4">
+          <div className="p-3">
             <Outlet />
           </div>
         </div>
