@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-
+import credit from "../../../../../assets/image/payment-logo/credit-card.png";
+import paypal from "../../../../../assets/image/payment-logo/paypal.png";
 const Book = () => {
   const {
     register,
@@ -73,12 +74,12 @@ const Book = () => {
         )}
         <span className="text-[16px]">Pay with</span>
         <div className="flex items-center gap-4 ">
-          <input type="checkbox" name="" id="" />
-          {/* icon */}
+          <input type="checkbox" name="" id="" className="checkbox bg-white" />
+          <img src={credit} alt="" />
           <p>Credit Card</p>
 
-          <input type="checkbox" name="" id="" />
-          {/* icon  */}
+          <input type="checkbox" name="" id="" className="checkbox bg-white" />
+          <img src={paypal} alt="" />
           <p>Paypal</p>
         </div>
       </fieldset>
