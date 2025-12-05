@@ -43,28 +43,16 @@ const Book = () => {
         )}
 
         <input
-          {...register("last_name", { required: true })}
+          {...register("order", { required: true })}
           className="bg-white py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
           type="text"
-          name="last_name"
+          name="order"
           // placeholder="Last Name"
         />
-        {errors?.last_name && (
-          <span className="text-red-600">Last Name field is required</span>
+        {errors?.order && (
+          <span className="text-red-600">Ordered field is required</span>
         )}
 
-        <input
-          {...register("confirm_password", { required: true })}
-          className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
-          type="password"
-          name="confirm_password"
-          placeholder="Confirm Password"
-        />
-        {errors?.confirm_password && (
-          <span className="text-red-600">
-            Confirm Password field is required
-          </span>
-        )}
         <span className="text-[16px]">Pay with</span>
         <div className="flex items-center gap-4 ">
           <input type="checkbox" name="" id="" className="checkbox bg-white" />
@@ -76,21 +64,39 @@ const Book = () => {
           <p>Paypal</p>
         </div>
         <input
-          {...register("password", { required: true })}
+          {...register("card_number", { required: true })}
           className="bg-white py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl placeholder:px-4"
           type="password"
-          name="password"
+          name="card_number"
           placeholder="Card Number"
         />
-        {errors?.password && (
+        {errors?.card_number && (
           <span className="text-red-600">Password field is required</span>
         )}
-        <div>
+        <div className="flex gap-4">
           <DatePicker
             selected={startDate}
             onChange={(date) => setStartDate(date)}
             className="input"
           />
+
+          <input
+            {...register("cvc", { required: true })}
+            className="bg-white input  placeholder:text-[16px] placeholder:font-medium text-xl"
+            type="password"
+            name="cvc"
+            placeholder="CVC"
+          />
+          {errors?.cvc && (
+            <span className="text-red-600">CVC field is required</span>
+          )}
+        </div>
+        <div className="flex justify-between">
+          <p>
+            Your Service charged will be{" "}
+            <span className="text-[14px] font-medium ">$1000</span>
+          </p>
+          <button className="btn w-1/3  bg-[#F63E7B] text-white">Pay</button>
         </div>
       </fieldset>
     </div>
