@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import credit from "../../../../../assets/image/payment-logo/credit-card.png";
 import paypal from "../../../../../assets/image/payment-logo/paypal.png";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 const Book = () => {
+  const [startDate, setStartDate] = useState(new Date());
   const {
     register,
     // handleSubmit,
@@ -49,16 +52,6 @@ const Book = () => {
         {errors?.last_name && (
           <span className="text-red-600">Last Name field is required</span>
         )}
-        <input
-          {...register("password", { required: true })}
-          className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
-          type="password"
-          name="password"
-          placeholder="Password"
-        />
-        {errors?.password && (
-          <span className="text-red-600">Password field is required</span>
-        )}
 
         <input
           {...register("confirm_password", { required: true })}
@@ -81,6 +74,23 @@ const Book = () => {
           <input type="checkbox" name="" id="" className="checkbox bg-white" />
           <img src={paypal} alt="" />
           <p>Paypal</p>
+        </div>
+        <input
+          {...register("password", { required: true })}
+          className="bg-white py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl placeholder:px-4"
+          type="password"
+          name="password"
+          placeholder="Card Number"
+        />
+        {errors?.password && (
+          <span className="text-red-600">Password field is required</span>
+        )}
+        <div>
+          <DatePicker
+            selected={startDate}
+            onChange={(date) => setStartDate(date)}
+            className="input"
+          />
         </div>
       </fieldset>
     </div>
