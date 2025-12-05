@@ -10,37 +10,27 @@ const Book = () => {
   } = useForm();
   // const onSubmit = (data) => console.log(data);
   return (
-    <div>
-      <h1>this is booking page</h1>
-      <fieldset className="fieldset flex flex-col gap-8">
+    <div className=" bg-[#e9f0fc]">
+      {/* <h1>this is booking page</h1> */}
+      <fieldset className="fieldset flex flex-col gap-8 w-1/2 p-12">
         <input
           {...register("first_name", { required: true })}
-          className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
+          className=" bg-white py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl "
           type="text"
           name="first_name"
-          placeholder="First Name"
+          // placeholder="First Name"
         />
 
         {errors?.first_name && (
           <span className="text-red-600">Name field is required</span>
         )}
-        <input
-          {...register("last_name", { required: true })}
-          className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
-          type="text"
-          name="last_name"
-          placeholder="Last Name"
-        />
-        {errors?.last_name && (
-          <span className="text-red-600">Last Name field is required</span>
-        )}
 
         <input
           {...register("email", { required: true })}
-          className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
+          className="bg-white py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
           type="text"
           name="email"
-          placeholder="User Name or Email"
+          // placeholder="User Name or Email"
         />
         {errors?.email && (
           <span className="text-red-600">
@@ -48,6 +38,16 @@ const Book = () => {
           </span>
         )}
 
+        <input
+          {...register("last_name", { required: true })}
+          className="bg-white py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
+          type="text"
+          name="last_name"
+          // placeholder="Last Name"
+        />
+        {errors?.last_name && (
+          <span className="text-red-600">Last Name field is required</span>
+        )}
         <input
           {...register("password", { required: true })}
           className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
@@ -71,6 +71,16 @@ const Book = () => {
             Confirm Password field is required
           </span>
         )}
+        <span className="text-[16px]">Pay with</span>
+        <div className="flex items-center gap-4 ">
+          <input type="checkbox" name="" id="" />
+          {/* icon */}
+          <p>Credit Card</p>
+
+          <input type="checkbox" name="" id="" />
+          {/* icon  */}
+          <p>Paypal</p>
+        </div>
       </fieldset>
     </div>
   );
