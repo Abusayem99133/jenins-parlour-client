@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "logo": "https://i.postimg.cc/XYZ/logo1.png",
+    "status": "pending",
+    "title": "Facial Treatment",
+    "description": "A deep cleansing facial designed to refresh, hydrate, and brighten your skin."
+  },
+  {
+    "id": 2,
+    "logo": "https://i.postimg.cc/XYZ/logo2.png",
+    "status": "done",
+    "title": "Skin Care Treatment",
+    "description": "A complete skincare session including exfoliation and nourishing mask."
+  },
+  {
+    "id": 3,
+    "logo": "https://i.postimg.cc/XYZ/logo3.png",
+    "status": "pending",
+    "title": "Anti-Aging Therapy",
+    "description": "A rejuvenating treatment that helps reduce wrinkles and fine lines."
+  },
+  {
+    "id": 4,
+    "logo": "https://i.postimg.cc/XYZ/logo4.png",
+    "status": "done",
+    "title": "Body Spa Massage",
+    "description": "A full body relaxation massage to relieve stress and improve circulation."
+  },
+  {
+    "id": 5,
+    "logo": "https://i.postimg.cc/XYZ/logo5.png",
+    "status": "pending",
+    "title": "Brightening Treatment",
+    "description": "A skin-brightening service designed to enhance glow and reduce dullness."
+  }
+]
