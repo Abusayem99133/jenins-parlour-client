@@ -91,12 +91,16 @@ const Book = () => {
             <span className="text-red-600">CVC field is required</span>
           )}
         </div>
-        <div className="flex justify-between">
-          <p>
+        <div className="flex flex-col md:flex-row  justify-between items-center gap-3 text-[14px] sm:text-[15px] md:text-[16px]">
+          <p className="text-[14px] sm:text-[15px] md:text-[16px]">
             Your Service charged will be{" "}
-            <span className="text-[14px] font-medium ">$1000</span>
+            <span className="text-[14px] sm:text-[15px] md:text-[16px] font-medium ">
+              $1000
+            </span>
           </p>
-          <button className="btn w-1/3  bg-[#F63E7B] text-white">Pay</button>
+          <button className="btn w-full sm:w-1/2  md:w-1/3  bg-[#F63E7B] text-white">
+            Pay
+          </button>
         </div>
       </fieldset>
     </div>
