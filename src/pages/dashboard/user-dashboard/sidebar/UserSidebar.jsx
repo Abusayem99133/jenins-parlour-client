@@ -86,7 +86,7 @@ const UserSidebar = () => {
         {navItems}
       </ul>
       {/* ---------- BOTTOM (User Info + Logout) ---------- */}
-      <div className="p-4 border-t">
+      <div className="p-4 border-t w-32">
         {/* User profile */}
         <div className="flex items-center gap-3 mb-3">
           <img
@@ -95,7 +95,7 @@ const UserSidebar = () => {
             className="w-10 h-10 rounded-full object-cover"
           />
           <div className="is-drawer-close:hidden">
-            <p className="font-semibold">{user?.displayName || "User"}</p>
+            {/* <p className="font-semibold">{user?.displayName || "User"}</p> */}
             <p className="text-sm text-gray-500">{user?.email}</p>
           </div>
         </div>
