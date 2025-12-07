@@ -10,7 +10,7 @@ const Review = () => {
   } = useForm();
   return (
     <div className="bg-[#e9f0fc]">
-      <fieldset className="fieldset flex flex-col gap-8 w-1/2 p-12">
+      <fieldset className="fieldset flex flex-col gap-8 w-1/2  p-8 md:p-12">
         <input
           {...register("first_name", { required: true })}
           className=" bg-white border-indigo-400 py-3 px-3 placeholder-[#0000004D] placeholder:text-[16px] placeholder:font-medium text-xl "
