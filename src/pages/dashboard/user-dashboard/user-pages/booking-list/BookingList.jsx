@@ -11,7 +11,7 @@ const BookingList = () => {
   return (
     <div className="bg-[#e9f0fc]">
       {/* <h1>booking list pages</h1> */}
-      <div className="grid grid-cols-3 justify-between gap-4 p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-between gap-2 md:gap-4 p-2 md:p-4">
         {bookingList?.map((list) => (
           <div className="p-4  bg-white rounded-xl">
             <div>
