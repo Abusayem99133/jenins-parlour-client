@@ -10,7 +10,7 @@ const BookingList = () => {
   console.log(bookingList);
   return (
     <div className="bg-[#e9f0fc]">
-      <h1>booking list pages</h1>
+      {/* <h1>booking list pages</h1> */}
       <div className="grid grid-cols-3 justify-between gap-4 p-4">
         {bookingList?.map((list) => (
           <div className="p-4  bg-white rounded-xl">
@@ -35,8 +35,10 @@ const BookingList = () => {
                   {list?.status}
                 </span>
               </div>
-              <h2>{list?.title}</h2>
-              <p>{list?.description}</p>
+              <h2 className="text-[20px] font-semibold text-[#111430]">
+                {list?.title}
+              </h2>
+              <p className="text-[16px] text-[#606268]">{list?.description}</p>
             </div>
           </div>
         ))}
