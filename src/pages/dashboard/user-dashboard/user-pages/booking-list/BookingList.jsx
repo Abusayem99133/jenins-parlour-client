@@ -9,11 +9,11 @@ const BookingList = () => {
   }, []);
   console.log(bookingList);
   return (
-    <div>
+    <div className="bg-[#e9f0fc]">
       <h1>booking list pages</h1>
       <div className="grid grid-cols-3 justify-between gap-4 p-4">
         {bookingList?.map((list) => (
-          <div className="p-4 border-2">
+          <div className="p-4  bg-white rounded-xl">
             <div>
               <div className="flex justify-between items-center w-full">
                 <img
@@ -22,13 +22,13 @@ const BookingList = () => {
                   alt="logo"
                 />
                 <span
-                  className={`btn text-[16px]  px-3 py-1 font-medium
+                  className={` text-[16px]  px-4 py-2 cursor-default font-medium
     ${
-      list?.status === "done"
-        ? "bg-[#C6FFE0] text-[#009444]" // Done → green
-        : list?.status === "pending"
-        ? "bg-[#FFE3E3] text-[#FF4545]" // Pending → red
-        : "bg-gray-200 text-gray-700" // Default / other status
+      list?.status === "Done"
+        ? "bg-[#C6FFE0] text-[#009444]"
+        : list?.status === "Pending"
+        ? "bg-[#FFE3E3] text-[#FF4545]"
+        : "bg-gray-200 text-gray-700"
     }
   `}
                 >

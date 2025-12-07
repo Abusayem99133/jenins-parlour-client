@@ -1,36 +1,36 @@
 [
   {
     "id": 1,
-    "logo": "https://i.postimg.cc/XYZ/logo1.png",
-    "status": "pending",
+    "logo": "../src/assets/image/booking-list/facial.png",
+    "status": "Pending",
     "title": "Facial Treatment",
     "description": "A deep cleansing facial designed to refresh, hydrate, and brighten your skin."
   },
   {
     "id": 2,
-    "logo": "https://i.postimg.cc/XYZ/logo2.png",
-    "status": "done",
+    "logo": "../src/assets/image/booking-list/skin-care.png",
+    "status": "Done",
     "title": "Skin Care Treatment",
     "description": "A complete skincare session including exfoliation and nourishing mask."
   },
   {
     "id": 3,
-    "logo": "https://i.postimg.cc/XYZ/logo3.png",
-    "status": "pending",
+    "logo": "../src/assets/image/booking-list/anti-aging-therapy.jpg",
+    "status": "Pending",
     "title": "Anti-Aging Therapy",
     "description": "A rejuvenating treatment that helps reduce wrinkles and fine lines."
   },
   {
     "id": 4,
-    "logo": "https://i.postimg.cc/XYZ/logo4.png",
-    "status": "done",
+    "logo": "../src/assets/image/booking-list/body-spa.jpg",
+    "status": "Done",
     "title": "Body Spa Massage",
     "description": "A full body relaxation massage to relieve stress and improve circulation."
   },
   {
     "id": 5,
-    "logo": "https://i.postimg.cc/XYZ/logo5.png",
-    "status": "pending",
+    "logo": "../src/assets/image/booking-list/brightening-treatment.jpg",
+    "status": "Pending",
     "title": "Brightening Treatment",
     "description": "A skin-brightening service designed to enhance glow and reduce dullness."
   }
