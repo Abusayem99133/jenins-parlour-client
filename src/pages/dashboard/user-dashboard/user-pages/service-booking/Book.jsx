@@ -16,7 +16,7 @@ const Book = () => {
   return (
     <div className=" bg-[#e9f0fc]">
       {/* <h1>this is booking page</h1> */}
-      <fieldset className="fieldset flex flex-col gap-8 w-1/2 p-12">
+      <fieldset className="fieldset flex flex-col gap-4 md:gap-8 md:w-1/2 p-12">
         <input
           {...register("first_name", { required: true })}
           className=" bg-white py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl "
@@ -65,13 +65,13 @@ const Book = () => {
         </div>
         <input
           {...register("card_number", { required: true })}
-          className="bg-white py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl placeholder:px-4"
+          className="bg-white py-3 placeholder-black placeholder:text-[14px] md:placeholder:text-[16px] placeholder:font-medium text-xl placeholder:px-4"
           type="password"
           name="card_number"
           placeholder="Card Number"
         />
         {errors?.card_number && (
-          <span className="text-red-600">Password field is required</span>
+          <span className="text-red-600">Card field is required</span>
         )}
         <div className="flex gap-4">
           <DatePicker
@@ -98,7 +98,7 @@ const Book = () => {
               $1000
             </span>
           </p>
-          <button className="btn w-full sm:w-1/2  md:w-1/3  bg-[#F63E7B] text-white">
+          <button className="btn w-full sm:w-1/2  md:w-1/3  bg-[#F63E7B] text-white text-[18px] md:text-[16px]">
             Pay
           </button>
         </div>
