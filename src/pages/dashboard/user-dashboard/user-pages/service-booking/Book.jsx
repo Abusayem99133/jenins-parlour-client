@@ -16,7 +16,7 @@ const Book = () => {
   return (
     <div className=" bg-[#e9f0fc]">
       {/* <h1>this is booking page</h1> */}
-      <fieldset className="fieldset flex flex-col gap-4 md:gap-8 md:w-1/2 p-12">
+      <fieldset className="fieldset flex flex-col gap-4 md:gap-8 w-full md:w-1/2 p-4 md:p-12">
         <input
           {...register("first_name", { required: true })}
           className=" bg-white py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl "
