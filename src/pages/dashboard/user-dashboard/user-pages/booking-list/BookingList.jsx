@@ -28,7 +28,7 @@ const BookingList = () => {
         ? "bg-[#C6FFE0] text-[#009444]"
         : list?.status === "Pending"
         ? "bg-[#FFE3E3] text-[#FF4545]"
-        : "bg-gray-100 text-gray-700"
+        : "bg-gray-200 text-gray-700"
     }
   `}
                 >

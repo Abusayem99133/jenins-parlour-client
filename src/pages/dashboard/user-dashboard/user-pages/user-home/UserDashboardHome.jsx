@@ -1,9 +1,10 @@
 import React from "react";
+import Book from "../service-booking/Book";
 
 const UserDashboardHome = () => {
   return (
     <div>
-      <span>user home</span>
+      <Book />
     </div>
   );
 };

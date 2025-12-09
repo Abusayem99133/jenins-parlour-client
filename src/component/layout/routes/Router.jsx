@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import ErrorPage from "../../../pages/errorpage/ErrorPage";
 import Layout from "../mainLayout/Layout";
 import Home from "../../../pages/home/Home";
@@ -35,9 +35,13 @@ export const router = createBrowserRouter([
     element: <UserDashboardLayout />,
     errorElement: <ErrorPage />,
     children: [
+      // {
+      //   path: "",
+      //   element: <UserDashboardHome />,
+      // },
       {
-        path: "",
-        element: <UserDashboardHome />,
+        index: true,
+        element: <Navigate to="book" replace />,
       },
       {
         path: "book",
