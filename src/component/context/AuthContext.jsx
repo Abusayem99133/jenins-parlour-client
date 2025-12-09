@@ -15,6 +15,19 @@ export const AuthContextProvider = ({ children }) => {
     }
     return { success: true, data };
   };
+
+  // sign in user
+  const signIn = async () => {
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email: "email",
+      password: "password",
+    });
+    if (error) {
+      console.error("there was a problem in signin", error);
+      return { success: false, error };
+    }
+    return { success: true, data };
+  };
   // sign out user
   const signOut = async () => {
     const { error } = await supabase.auth.signOut();
@@ -32,7 +45,7 @@ export const AuthContextProvider = ({ children }) => {
     });
   }, []);
   const authInfo = () => {
-    session, signUpNewUser, signOut;
+    session, signUpNewUser, signIn, signOut;
   };
   return (
     <AuthContext.Provider value={{ authInfo }}>{children}</AuthContext.Provider>
