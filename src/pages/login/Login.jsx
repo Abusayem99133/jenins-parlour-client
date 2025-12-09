@@ -1,18 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/image/logo/logo.png";
 import { FcGoogle } from "react-icons/fc";
-import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { UserAuth } from "../../component/context/AuthContext";
+import toast from "react-hot-toast";
+import { Helmet } from "react-helmet";
 
 const Login = () => {
+  const { signIn } = UserAuth();
+  const [loading, setLoading] = useState(false);
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  // ---------------- LOGIN SUBMIT ----------------
+  const onSubmit = async (data) => {
+    setLoading(true);
+
+    try {
+      await signIn(data.email, data.password);
+
+      toast.success("Login Successful!", {
+        position: "top-center",
+      });
+
+      Navigate("/"); // login successful হলে home এ যাক
+    } catch (error) {
+      toast.error(error.message || "Login failed");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="flex flex-col justify-center items-center mx-auto bg-white border h-screen">
