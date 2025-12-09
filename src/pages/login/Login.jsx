@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../assets/image/logo/logo.png";
 import { FcGoogle } from "react-icons/fc";
-import { Link, Navigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { UserAuth } from "../../component/context/AuthContext";
 import toast from "react-hot-toast";
@@ -9,6 +9,7 @@ import { Helmet } from "react-helmet";
 
 const Login = () => {
   const { signIn } = UserAuth();
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const {
     register,
@@ -19,17 +20,17 @@ const Login = () => {
   // ---------------- LOGIN SUBMIT ----------------
   const onSubmit = async (data) => {
     setLoading(true);
-
+    const { email, password } = data;
     try {
-      await signIn(data.email, data.password);
-
-      toast.success("Login Successful!", {
-        position: "top-center",
-      });
-
-      Navigate("/"); // login successful হলে home এ যাক
+      const { error } = await signIn(email, password);
+      if (error) {
+        toast.error(error.message);
+        return;
+      }
+      toast.success("Login Successful !");
+      navigate("/");
     } catch (error) {
-      toast.error(error.message || "Login failed");
+      toast.error("something went wrong");
     } finally {
       setLoading(false);
     }
