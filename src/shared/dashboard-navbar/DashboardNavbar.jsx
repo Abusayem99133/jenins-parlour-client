@@ -25,15 +25,17 @@ const DashboardNavbar = () => {
               <span>book</span>
             </ul>
           </div>
-          <div className=" hidden md:flex items-center ">
-            <div>
-              <img src={logo} alt="" />
+          <Link to={"/"}>
+            <div className=" hidden md:flex items-center cursor-pointer gap-2">
+              <div>
+                <img src={logo} alt="" />
+              </div>
+              <div className=" flex flex-col items-center">
+                <a className=" md:text-2xl font-bold">Jerin's </a>
+                <span className="md:text-xl font-semibold">Parlour</span>
+              </div>
             </div>
-            <div className=" flex flex-col items-center">
-              <a className="btn btn-ghost md:text-2xl font-bold">Jerin's </a>
-              <span className="md:text-xl font-semibold">Parlour</span>
-            </div>
-          </div>
+          </Link>
         </div>
         <div className="navbar hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

@@ -58,15 +58,17 @@ const Navbar = () => {
               {navItems}
             </ul>
           </div>
-          <div className="flex items-center gap-1">
-            <div>
-              <img src={logo} alt="" />
+          <Link to={"/"}>
+            <div className="flex items-center gap-2 cursor-pointer">
+              <div>
+                <img src={logo} alt="" />
+              </div>
+              <div className=" flex flex-col items-center">
+                <a className=" text-3xl font-bold">Jerin's </a>
+                <span className="text-2xl font-semibold">Parlour</span>
+              </div>
             </div>
-            <div className=" flex flex-col items-center">
-              <a className="btn btn-ghost text-3xl font-bold">Jerin's </a>
-              <span className="text-2xl font-semibold">Parlour</span>
-            </div>
-          </div>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navItems}</ul>
