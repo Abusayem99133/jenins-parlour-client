@@ -5,6 +5,7 @@ import facebook from "../../assets/image/register/facebook.png";
 import { FcGoogle } from "react-icons/fc";
 import { useForm } from "react-hook-form";
 import { UserAuth } from "../../component/context/AuthContext";
+import toast from "react-hot-toast";
 const Register = () => {
   const {
     register,
@@ -12,9 +13,23 @@ const Register = () => {
 
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  // const onSubmit = (data) => console.log(data);
   const { session, signUpNewUser } = UserAuth();
   console.log(session);
+  const onSubmit = async (data) => {
+    const { first_name, last_name, email, password } = data;
+    const res = await signUpNewUser({
+      first_name,
+      last_name,
+      email,
+      password,
+    });
+    if (res.success) {
+      toast.success("Signup successful!");
+    } else {
+      toast.error("Error:", +res.message);
+    }
+  };
   return (
     <div className="flex flex-col justify-center items-center bg-[white]  h-auto min-h-screen px-4 ">
       <form
