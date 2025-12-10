@@ -1,8 +1,8 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { supabase } from "../../supabase/supabase.-client";
+import { supabase } from "../../supabase/supabase-client";
 const AuthContext = createContext(null);
 export const AuthContextProvider = ({ children }) => {
-  const [session, setSession] = useState(undefined);
+  const [session, setSession] = useState(null);
   // sign up
   const signUpNewUser = async ({ first_name, last_name, email, password }) => {
     const { data, error } = await supabase.auth.signUp({
@@ -44,18 +44,32 @@ export const AuthContextProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setSession(session);
-    });
-    supabase.auth.onAuthStateChange((_event, session) => {
-      setSession(session);
-    });
+    const getSession = async () => {
+      const { data } = await supabase.auth.getSession();
+      setSession(data?.session);
+    };
+    getSession();
+    const { data: listener } = supabase.auth.onAuthStateChange(
+      (_event, ses) => {
+        setSession(ses);
+      }
+    );
+    return () => listener.subscription.unsubscribe();
+    // supabase.auth.getSession().then(({ data: { session } }) => {
+    //   setSession(session);
+    // });
+    // supabase.auth.onAuthStateChange((_event, session) => {
+    //   setSession(session);
+    // });
   }, []);
-  const authInfo = () => {
-    session, signUpNewUser, signIn, signOut;
+  const authInfo = {
+    session,
+    signUpNewUser,
+    signIn,
+    signOut,
   };
   return (
-    <AuthContext.Provider value={{ authInfo }}>{children}</AuthContext.Provider>
+    <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
   );
 };
 export const UserAuth = () => {

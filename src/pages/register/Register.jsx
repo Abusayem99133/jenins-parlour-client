@@ -27,7 +27,7 @@ const Register = () => {
     if (res.success) {
       toast.success("Signup successful!");
     } else {
-      toast.error("Error:", +res.message);
+      toast.error(res.message || "Signup failed..!");
     }
   };
   return (
