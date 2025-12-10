@@ -23,7 +23,7 @@ const Login = () => {
     const { email, password } = data;
     try {
       const res = await signIn({ email, password });
-      if (!res.error) {
+      if (res.error) {
         toast.error(res.error.message);
         return;
       }
