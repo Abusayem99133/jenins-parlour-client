@@ -22,9 +22,9 @@ const Login = () => {
     setLoading(true);
     const { email, password } = data;
     try {
-      const { error } = await signIn(email, password);
-      if (error) {
-        toast.error(error.message);
+      const res = await signIn({ email, password });
+      if (!res.error) {
+        toast.error(res.error.message);
         return;
       }
       toast.success("Login Successful !");
