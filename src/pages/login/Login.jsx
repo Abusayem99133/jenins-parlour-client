@@ -52,7 +52,7 @@ const Login = () => {
       </div>
 
       {/* Login Section */}
-      <div className="mt-10 text-center">
+      <div className="mt-12 text-center">
         <h1 className="text-[36px] font-semibold mb-5">Login With</h1>
 
         {/* ---------------- FORM START ---------------- */}
