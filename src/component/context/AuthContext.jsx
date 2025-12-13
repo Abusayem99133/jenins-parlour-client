@@ -4,6 +4,24 @@ const AuthContext = createContext(null);
 export const AuthContextProvider = ({ children }) => {
   const [session, setSession] = useState(null);
   // sign up
+  // const signUpNewUser = async ({ first_name, last_name, email, password }) => {
+  //   const { data, error } = await supabase.auth.signUp({
+  //     email,
+  //     password,
+  //     options: {
+  //       data: {
+  //         first_name,
+  //         last_name,
+  //         role: "user",
+  //       },
+  //     },
+  //   });
+  //   if (error) {
+  //     console.error("there was a problem signing up:", error);
+  //     return { success: false, error };
+  //   }
+  //   return { success: true, data };
+  // };
   const signUpNewUser = async ({ first_name, last_name, email, password }) => {
     const { data, error } = await supabase.auth.signUp({
       email,
@@ -12,14 +30,21 @@ export const AuthContextProvider = ({ children }) => {
         data: {
           first_name,
           last_name,
-          role: "user",
         },
       },
     });
+
     if (error) {
-      console.error("there was a problem signing up:", error);
       return { success: false, error };
     }
+
+    // insert profile with role = user
+    await supabase.from("profiles").insert({
+      id: data.user.id,
+      email,
+      role: "user",
+    });
+
     return { success: true, data };
   };
 

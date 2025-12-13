@@ -1,21 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import lineBar from "../../assets/image/register/Line -bar.png";
 import facebook from "../../assets/image/register/facebook.png";
 import { FcGoogle } from "react-icons/fc";
 import { useForm } from "react-hook-form";
 import { UserAuth } from "../../component/context/AuthContext";
 import toast from "react-hot-toast";
+
 const Register = () => {
   const {
     register,
     handleSubmit,
-
     formState: { errors },
   } = useForm();
-  // const onSubmit = (data) => console.log(data);
+
   const { session, signUpNewUser } = UserAuth();
-  console.log(session);
+  const navigate = useNavigate();
   const onSubmit = async (data) => {
     const { first_name, last_name, email, password } = data;
     const res = await signUpNewUser({
@@ -26,111 +26,119 @@ const Register = () => {
     });
     if (res.success) {
       toast.success("Signup successful!");
+      navigate("/");
     } else {
       toast.error(res.message || "Signup failed..!");
     }
   };
+
   return (
-    <div className="flex flex-col justify-center items-center bg-[white]  h-auto min-h-screen px-4 ">
+    <div className="flex flex-col justify-center items-center bg-white min-h-screen px-4 py-8">
+      {/* Form */}
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="border w-full max-w-[570px] p-4 sm:p-6 md:p-8 lg:p-10 rounded-md"
+        className="border w-full max-w-[520px] p-6 sm:p-8 md:p-10 rounded-md shadow-sm"
       >
-        <h1 className="text-[22px] sm:text-[24px] font-bold mb-10">
+        <h1 className="text-[22px] sm:text-[24px] font-bold mb-8 text-center sm:text-left">
           Create an account
         </h1>
 
-        <fieldset className="fieldset flex flex-col gap-8">
+        <fieldset className="flex flex-col gap-6">
+          {/* First Name */}
           <input
             {...register("first_name", { required: true })}
-            className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
+            className="border-b-2 border-[#C5C5C5] py-3 placeholder:text-[16px] placeholder:font-medium text-lg focus:outline-none"
             type="text"
-            name="first_name"
             placeholder="First Name"
           />
-
           {errors?.first_name && (
-            <span className="text-red-600">Name field is required</span>
+            <span className="text-red-600 text-sm">Name field is required</span>
           )}
+
+          {/* Last Name */}
           <input
             {...register("last_name", { required: true })}
-            className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
+            className="border-b-2 border-[#C5C5C5] py-3 placeholder:text-[16px] placeholder:font-medium text-lg focus:outline-none"
             type="text"
-            name="last_name"
             placeholder="Last Name"
           />
           {errors?.last_name && (
-            <span className="text-red-600">Last Name field is required</span>
+            <span className="text-red-600 text-sm">
+              Last Name field is required
+            </span>
           )}
 
+          {/* Email */}
           <input
             {...register("email", { required: true })}
-            className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
-            type="text"
-            name="email"
+            className="border-b-2 border-[#C5C5C5] py-3 placeholder:text-[16px] placeholder:font-medium text-lg focus:outline-none"
+            type="email"
             placeholder="User Name or Email"
           />
           {errors?.email && (
-            <span className="text-red-600">
+            <span className="text-red-600 text-sm">
               User Name or Email field is required
             </span>
           )}
 
+          {/* Password */}
           <input
             {...register("password", { required: true })}
-            className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
+            className="border-b-2 border-[#C5C5C5] py-3 placeholder:text-[16px] placeholder:font-medium text-lg focus:outline-none"
             type="password"
-            name="password"
             placeholder="Password"
           />
           {errors?.password && (
-            <span className="text-red-600">Password field is required</span>
+            <span className="text-red-600 text-sm">
+              Password field is required
+            </span>
           )}
 
+          {/* Confirm Password */}
           <input
             {...register("confirm_password", { required: true })}
-            className="border-b-2 border-[#C5C5C5] py-3 placeholder-black placeholder:text-[16px] placeholder:font-medium text-xl"
+            className="border-b-2 border-[#C5C5C5] py-3 placeholder:text-[16px] placeholder:font-medium text-lg focus:outline-none"
             type="password"
-            name="confirm_password"
             placeholder="Confirm Password"
           />
           {errors?.confirm_password && (
-            <span className="text-red-600">
+            <span className="text-red-600 text-sm">
               Confirm Password field is required
             </span>
           )}
         </fieldset>
 
-        <div className="w-full mt-8">
-          <button className="bg-[#F63E7B] text-white text-[16px] font-medium py-4 w-full rounded-lg cursor-pointer">
+        {/* Submit */}
+        <div className="mt-8">
+          <button className="bg-[#F63E7B] text-white text-[16px] font-medium py-3 w-full rounded-lg cursor-pointer">
             Create an account
           </button>
         </div>
 
-        <p className="mt-6 text-center">
+        <p className="mt-6 text-center text-sm sm:text-[16px]">
           Already have an account?{" "}
-          <Link
-            to={"/login"}
-            className="text-[#F63E7B] font-medium cursor-pointer"
-          >
+          <Link to={"/login"} className="text-[#F63E7B] font-medium">
             Login
           </Link>
         </p>
       </form>
-      <div className="flex items-center mt-5 gap-2">
-        <img className="h-[2px] w-[220px]" src={lineBar} alt="" />
-        <p>Or</p>
-        <img className="h-[2px] w-[220px]" src={lineBar} alt="" />
+
+      {/* Divider */}
+      <div className="flex items-center justify-center w-full max-w-[230px] mt-6 gap-3 mx-auto">
+        <img className="h-[2px] w-full" src={lineBar} alt="" />
+        <p className="whitespace-nowrap text-center text-xl md:text-2xl">Or</p>
+        <img className="h-[2px] w-full" src={lineBar} alt="" />
       </div>
-      <div className="">
-        <button className="flex items-center w-[470px] border rounded-full gap-12 px-2 py-2 mt-4 cursor-pointer  font-medium text-[16px]">
-          <img src={facebook} alt="" />
+
+      {/* Social Buttons */}
+      <div className="w-full max-w-[520px] mt-4">
+        <button className="flex items-center justify-center sm:justify-start w-full border rounded-full py-3 gap-4 sm:gap-8 px-4 font-medium text-[16px] cursor-pointer">
+          <img className="w-6 h-6" src={facebook} alt="" />
           <span>Continue with Facebook</span>
         </button>
-      </div>
-      <div className="mt-4">
-        <button className="flex items-center border  rounded-full w-[470px] py-2 px-2 gap-12 font-medium text-[16px]">
-          <FcGoogle className="text-4xl" />
+
+        <button className="flex items-center justify-center sm:justify-start w-full border rounded-full py-3 gap-4 sm:gap-8 px-4 font-medium text-[16px] mt-4 cursor-pointer">
+          <FcGoogle className="text-3xl " />
           <span>Continue with Google</span>
         </button>
       </div>
