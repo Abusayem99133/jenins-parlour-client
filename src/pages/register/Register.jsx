@@ -39,7 +39,7 @@ const Register = () => {
         onSubmit={handleSubmit(onSubmit)}
         className="border w-full max-w-[520px] p-6 sm:p-8 md:p-10 rounded-md shadow-sm"
       >
-        <h1 className="text-[21px] sm:text-[24px] font-bold mb-8 text-center sm:text-left">
+        <h1 className="text-[22px] sm:text-[24px] font-bold mb-8 text-center sm:text-left">
           Create an account
         </h1>
 
