@@ -3,7 +3,7 @@ import React from "react";
 const AddService = () => {
   return (
     <div>
-      <h1>add service pages</h1>
+      <h1>add service pages work on going</h1>
     </div>
   );
 };
