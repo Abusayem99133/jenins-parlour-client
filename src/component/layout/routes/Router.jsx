@@ -57,4 +57,7 @@ export const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/admin-dashboard",
+  },
 ]);
