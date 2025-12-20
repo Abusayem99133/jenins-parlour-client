@@ -22,7 +22,7 @@ const Testimonial = () => {
   // console.log(testimonial);
   return (
     <div className="bg-white">
-      <h1 className="text-[34px] items-center justify-center mx-auto flex font-bold text-[#1F1632] mt-12">
+      <h1 className="text-[35px] items-center justify-center mx-auto flex font-bold text-[#1F1632] mt-12">
         Testimonials
       </h1>
       {/* <div>
