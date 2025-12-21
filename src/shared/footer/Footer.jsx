@@ -14,7 +14,7 @@ const Footer = () => {
           sm:footer-horizontal 
           bg-[#F63E7B] 
           text-white 
-          p-6 sm:p-12 md:p-16 lg:p-24
+          p-6 sm:p-11 md:p-16 lg:p-24
           gap-10 sm:gap-6 md:gap-10
         "
       >
