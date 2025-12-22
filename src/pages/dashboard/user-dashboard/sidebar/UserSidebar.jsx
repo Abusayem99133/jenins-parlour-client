@@ -4,7 +4,7 @@ import { IoIosList } from "react-icons/io";
 import { RiMessage2Line } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 import { UserAuth } from "../../../../component/context/AuthContext";
-
+import logo from "../../../../assets/image/logo/pitter-parker.jpg";
 const UserSidebar = () => {
   const { user, signOut } = UserAuth();
   const navItems = [
@@ -90,7 +90,7 @@ const UserSidebar = () => {
         {/* User profile */}
         <div className="flex items-center gap-3 mb-3">
           <img
-            src={user?.photoURL || "https://via.placeholder.com/40"}
+            src={user?.photoURL || `${logo}`}
             alt="User"
             className="w-10 h-10 rounded-full object-cover"
           />
