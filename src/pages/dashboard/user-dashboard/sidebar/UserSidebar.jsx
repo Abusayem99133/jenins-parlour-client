@@ -86,7 +86,7 @@ const UserSidebar = () => {
         {navItems}
       </ul>
       {/* ---------- BOTTOM (User Info + Logout) ---------- */}
-      <div className="p-4 ">
+      <div className="p-5 ">
         {/* User profile */}
         <div className="flex items-center gap-3 mb-3">
           <img
