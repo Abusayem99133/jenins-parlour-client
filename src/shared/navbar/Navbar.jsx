@@ -11,7 +11,7 @@ const Navbar = () => {
       </Link>
     </li>,
     <li>
-      <Link className="text-[16px] font-semibold">Our Portfolio</Link>
+      <Link className="text-[15px] font-semibold">Our Portfolio</Link>
     </li>,
     <li>
       <Link to={"/user-dashboard"} className="text-[16px] font-semibold">
