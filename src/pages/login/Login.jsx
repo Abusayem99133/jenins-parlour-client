@@ -17,7 +17,7 @@ const Login = () => {
     formState: { errors },
   } = useForm();
 
-  // ---------------- LOGIN SUBMIT ----------------
+  // ---------------- LOGIN SUBMITTED ----------------
   const onSubmit = async (data) => {
     setLoading(true);
     const { email, password } = data;
