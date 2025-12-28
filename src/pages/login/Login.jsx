@@ -58,7 +58,7 @@ const Login = () => {
         {/* ---------------- FORM START ---------------- */}
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col w-[350px] mx-auto gap-3"
+          className="flex flex-col w-[355px] mx-auto gap-3"
         >
           {/* Email */}
           <input
