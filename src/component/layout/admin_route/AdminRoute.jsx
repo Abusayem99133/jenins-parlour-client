@@ -8,7 +8,7 @@ const AdminRoute = () => {
   if (!user || role !== "admin") {
     return <Navigate to={"/"} replace />;
   }
-  return <div></div>;
+  return <div>hi</div>;
 };
 
 export default AdminRoute;
