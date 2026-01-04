@@ -8,7 +8,7 @@ const Banner = () => {
         className="flex flex-col-reverse md:flex-row justify-between items-center 
                 pt-6 md:pt-20 px-5 sm:px-10 md:px-20 lg:px-28 gap-8 w-full"
       >
-        {/* Left Side - Text Section */}
+        {/* Left Side - Text Sections */}
         <div className="w-full md:w-1/2">
           <h1 className="text-[26px] sm:text-[32px] md:text-[48px] font-bold mb-3 leading-tight">
             Beauty Salon For Every Women
