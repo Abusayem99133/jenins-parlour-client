@@ -31,7 +31,6 @@ const Banner = () => {
             alt=""
           />
         </div>
-        h1 
       </div>
     </div>
   );
