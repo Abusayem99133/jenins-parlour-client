@@ -131,7 +131,7 @@ const Register = () => {
       </div>
 
       {/* Social Buttons */}
-      <div className="w-full max-w-[520px] mt-4">
+      <div className="w-full max-w-[520px] mt-5">
         <button className="flex items-center justify-center sm:justify-start w-full border rounded-full py-3 gap-4 sm:gap-8 px-4 font-medium text-[16px] cursor-pointer">
           <img className="w-6 h-6" src={facebook} alt="" />
           <span>Continue with Facebook</span>
