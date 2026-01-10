@@ -6,7 +6,7 @@ const Banner = () => {
     <div>
       <div
         className="flex flex-col-reverse md:flex-row justify-between items-center 
-                pt-6 md:pt-20 px-5 sm:px-10 md:px-20 lg:px-28 gap-8 w-full"
+                pt-5 md:pt-20 px-5 sm:px-10 md:px-20 lg:px-28 gap-8 w-full"
       >
         {/* Left Side - Text Sections */}
         <div className="w-full md:w-1/2">
