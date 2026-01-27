@@ -6,7 +6,6 @@ import Login from "../../../pages/login/Login";
 import Register from "../../../pages/register/Register";
 import BookingList from "../../../pages/dashboard/user-dashboard/user-pages/booking-list/BookingList";
 import UserDashboardLayout from "../../../pages/dashboard/user-dashboard/UserDashboardLayout";
-import UserDashboardHome from "../../../pages/dashboard/user-dashboard/user-pages/user-home/UserDashboardHome";
 import Book from "../../../pages/dashboard/user-dashboard/user-pages/service-booking/Book";
 import Review from "../../../pages/dashboard/user-dashboard/user-pages/review/Review";
 
